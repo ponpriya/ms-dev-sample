@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.techm.ms.resource.AccountResourceImpl;
+import com.techm.ms.resource.UserResourceImpl;
 
 import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.jaxrs.listing.ApiListingResource;
@@ -56,6 +57,7 @@ public class JerseyConfiguration extends ResourceConfig {
 	@Autowired
     public JerseyConfiguration() {
 		register(AccountResourceImpl.class);	
+		register(UserResourceImpl.class);	
 		
     }
 	
